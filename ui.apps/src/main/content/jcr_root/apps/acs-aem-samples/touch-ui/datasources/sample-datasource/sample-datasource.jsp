@@ -35,6 +35,7 @@
 %><cq:defineObjects/><%
     // Set a fallback DataSource to be an Empty DataSource
     request.setAttribute(DataSource.class.getName(), EmptyDataSource.instance());
+    log.info("sample datasource test");
 
     // The GraniteUI Widget should define the datasource beneath it using the nodeName "datasource"
     Resource datasource = resource.getChild("datasource");
